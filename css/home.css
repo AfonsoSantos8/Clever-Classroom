@@ -1,0 +1,168 @@
+@font-face {
+
+    font-family: "essays";
+    src: url(fonts/essays.ttf);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "essays";
+    background: #D2DB76;
+    color: #2e6417;
+    line-height: 1.5;
+}
+
+header {
+    color: white;
+    padding: 20px 16px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "essays";
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.home-section {
+    min-height: calc(100vh - 96px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 100px;
+    position: relative;
+}
+
+.home-card {
+    width: 100%;
+    max-width: 560px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.home-content h2 {
+    font-size: 1.7rem;
+    color: #2e6417;
+}
+
+.home-content p {
+    font-size: 1rem;
+    color: #2e6417;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.button-row {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 16px;
+    z-index: 10;
+}
+
+
+.image-title img {
+
+    width: 20rem;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin: auto;
+
+}
+
+.sala,
+.info {
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.sala {
+    background: #FFC3CC;
+    color: #2e6417;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+}
+
+.info {
+    background: #FFC3CC;
+    color: #2e6417;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+}
+
+.sala:hover,
+.info:hover,
+.sala:focus,
+.info:focus {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px 12px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .button-row {
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .sala,
+    .info {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .sala,
+    .info {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}

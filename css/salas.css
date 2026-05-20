@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "essays";
+    src: url(fonts/essays.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "essays";
+    background: #D2DB76;
+    color: #2e6417;
+    line-height: 1.5;
+}
+
+header {
+    color: white;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-title img {
+    width: 20rem;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin: auto;
+}
+
+.home-button {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFC3CC;
+    color: #2e6417;
+    padding: 8px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.intro-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding-bottom: 60px;
+}
+
+.room-card {
+    background: #FFC3CC;
+    border-radius: 22px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #2e6417;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.room-card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 8px 18px, rgba(0, 0, 0, 0.18);
+}
+
+.room-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.room-card-content {
+    padding: 16px;
+}
+
+.room-card-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.room-card-content p {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .image-title img {
+        width: 18rem;
+    }
+
+    .home-button {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}

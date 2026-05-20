@@ -33,6 +33,13 @@ header h1 {
     margin-bottom: 8px;
 }
 
+.image-title img {
+    width: 20rem;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin: auto;
+}
+
 .home-button {
     position: absolute;
     left: 16px;
@@ -149,7 +156,7 @@ header h1 {
 
     .home-button {
         padding: 8px 12px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .button-row {
